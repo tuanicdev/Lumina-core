@@ -8,7 +8,7 @@
 
 *Lead Architect of the Lumina Sovereign Reasoning Kernel for the Xarvis Intelligence Platform*  
 
-Repository: [https://github.com/tuanicdev/cuna](https://github.com/tuanicdev/cuna)  
+Repository: [https://github.com/tuanicdev/Lumina-core](https://github.com/tuanicdev/Lumina-core)  
 
 Date: October 2026  
 
@@ -623,7 +623,7 @@ These findings suggest that the most promising role for neuro-symbolic architect
 
 
 
-All software, evaluation harnesses, and raw execution logs are open-source and available in the project repository ([https://github.com/tuanicdev/cuna](https://github.com/tuanicdev/cuna)):
+All software, evaluation harnesses, and raw execution logs are accessible in the official research repository ([https://github.com/tuanicdev/Lumina-core](https://github.com/tuanicdev/Lumina-core)):
 
 - `Lumina_Soberana/scratch/eval_gsm8k_full.py`: Canonical 1,319 GSM8K neuro-symbolic evaluation script.
 
