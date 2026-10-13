@@ -749,7 +749,7 @@ AMBIGUITY & EXTRACTION POLICY:
 
 *Input Problem:*
 
-> "Janet’s ducks lay 16 eggs per day. She eats 3 for breakfast and bakes muffins using 4 eggs every day. She sells the remaining eggs at the market for $2 each. How much money does she make every day?"
+> "Janet’s ducks lay 16 eggs per day. She eats 3 for breakfast and bakes muffins using 4 eggs every day. She sells the remaining eggs at the market for \$2 each. How much money does she make every day?"
 
 
 
@@ -979,7 +979,7 @@ Across the 1,319 GSM8K problems, Lumina experienced exactly 26 first-pass errors
 
 | **#369** | Erin now has three times more points than Sara (8). How many before (scored 14)? | `18.0` | `10.0` | Category 1 | Polysemy: "three times more" parsed as $3 \times 8 = 24 \implies 24 - 14 = 10$, whereas gold intended $8 + (3 \times 8) = 32 \implies 32 - 14 = 18$. |
 
-| **#381** | Karan borrowed $3,650 for 5 months at 10% interest. Monthly equal payment? | `803.0` | `760.0` | Category 5 | Annualized vs period interest: Gold applied 10% total over 5 months ($3650 \times 1.10 / 5 = 803$), transducer applied standard simple monthly interest ($760$). |
+| **#381** | Karan borrowed \$3,650 for 5 months at 10% interest. Monthly equal payment? | `803.0` | `760.0` | Category 5 | Annualized vs period interest: Gold applied 10% total over 5 months ($3650 \times 1.10 / 5 = 803$), transducer applied standard simple monthly interest ($760$). |
 
 | **#404** | Mel uses 900W AC for 8h/day. Cost calculation over month. | `81.0` | `135.0` | Category 5 | Power tariff tier assumption and monthly day basis (30 vs 31 days) misassigned during entity transduction. |
 
@@ -987,13 +987,13 @@ Across the 1,319 GSM8K problems, Lumina experienced exactly 26 first-pass errors
 
 | **#455** | Marin and neighbor Nancy each eat 4 apples a day. Total in 30 days? | `150.0` | `240.0` | Category 2 | **Dataset Ground-Truth Error:** Canonical solution mistakenly computes $(4+1) \times 30 = 150$. Lumina correctly computes $2 \times 4 \times 30 = 240$. |
 
-| **#516** | Tara bought 8 packs of 5 canvas bags for $4 each. Sells for $8 each. | `160.0` | `288.0` | Category 4 | Pack vs item price: Transducer assigned $4 to the 5-pack rather than per individual bag ($8 \times 40 - 8 \times 4 = 288$ vs $320 - 160 = 160$). |
+| **#516** | Tara bought 8 packs of 5 canvas bags for \$4 each. Sells for \$8 each. | `160.0` | `288.0` | Category 4 | Pack vs item price: Transducer assigned \$4 to the 5-pack rather than per individual bag ($8 \times 40 - 8 \times 4 = 288$ vs $320 - 160 = 160$). |
 
-| **#553** | Marketing company commission: sells $1000, earns 30% on excess... | `450.0` | `900.0` | Category 5 | Threshold bracket scoping: Commission applied to total gross vs marginal bracket. |
+| **#553** | Marketing company commission: sells \$1000, earns 30% on excess... | `450.0` | `900.0` | Category 5 | Threshold bracket scoping: Commission applied to total gross vs marginal bracket. |
 
 | **#650** | Fishio Instagram selfie likes: 2000 after 1 week; grows by multiplier... | `162000.0` | `160000.0` | Category 4 | Base initial likes included twice in geometric expansion steps. |
 
-| **#653** | James hires carriage 5 PM to 9 PM (1h free, first paid $15, then $20/h)... | `75.0` | `105.0` | Category 4 | Free hour deduction mapped to end of interval rather than beginning tariff step. |
+| **#653** | James hires carriage 5 PM to 9 PM (1h free, first paid \$15, then \$20/h)... | `75.0` | `105.0` | Category 4 | Free hour deduction mapped to end of interval rather than beginning tariff step. |
 
 | **#750** | 54 students separated into 6 groups. Activity requires 12 items/group... | `3.0` | `6.0` | Category 4 | Entity role confusion: Ratio calculated per student rather than per group. |
 
@@ -1007,7 +1007,7 @@ Across the 1,319 GSM8K problems, Lumina experienced exactly 26 first-pass errors
 
 | **#831** | Britany records 18 4-minute TikTok videos each week; spends 2h writing... | `1128.0` | `18.8` | Category 3 | Unit conversion: Transducer left time in hours ($18.8\text{ h}$) while canonical solution required minutes ($1128\text{ min}$). |
 
-| **#895** | Tasha made $80 selling lemonade and mowing lawns... | `26.0` | `50.0` | Category 4 | Multi-job earnings allocation: Lemonade earnings subtracted from wrong sub-total. |
+| **#895** | Tasha made \$80 selling lemonade and mowing lawns... | `26.0` | `50.0` | Category 4 | Multi-job earnings allocation: Lemonade earnings subtracted from wrong sub-total. |
 
 | **#953** | Vince staples 30 reports every 15 min from 8:00 AM to 11:00 PM... | `360.0` | `1800.0` | Category 4 | Elapsed time miscalculation: Transducer parsed 11:00 PM as 11:00 AM (3 hours vs 15 hours). |
 
@@ -1015,17 +1015,17 @@ Across the 1,319 GSM8K problems, Lumina experienced exactly 26 first-pass errors
 
 | **#1036** | Richard soda fountain experiment video recording... | `35.0` | `40.0` | Category 4 | Frame count deduction during trimming phase. |
 
-| **#1043** | Johnny's dad betting on horse racing: lost $5, won second... | `3.0` | `3.5` | Category 4 | Fractional payout odds parsed as net multiplier instead of gross return. |
+| **#1043** | Johnny's dad betting on horse racing: lost \$5, won second... | `3.0` | `3.5` | Category 4 | Fractional payout odds parsed as net multiplier instead of gross return. |
 
-| **#1049** | Ben bought car for $20,000 in 2007. Depreciates at 21% per year... | `7400.0` | `9860.78` | Category 5 | Compound vs simple depreciation: Gold used naive linear subtraction ($21\% \times 3 = 63\%$), transducer applied true compound depreciation ($20000 \times 0.79^3$). |
+| **#1049** | Ben bought car for \$20,000 in 2007. Depreciates at 21% per year... | `7400.0` | `9860.78` | Category 5 | Compound vs simple depreciation: Gold used naive linear subtraction ($21\% \times 3 = 63\%$), transducer applied true compound depreciation ($20000 \times 0.79^3$). |
 
 | **#1060** | Imma has 3 cats fed twice a day with 60g. How many days will 720g last? | `2.0` | `6.0` | Category 4 | Multi-agent divisor: Transducer calculated $720 / (2 \times 60) = 6$ days (omitting 3 cats factor: $720 / (3 \times 2 \times 60) = 2$ days). |
 
-| **#1162** | Abraham owns 80 sq meters. Sold half for $50, then sold another 1/4... | `170.0` | `140.0` | Category 4 | Fractional remainder base: 1/4 applied to remaining half vs original total land area. |
+| **#1162** | Abraham owns 80 sq meters. Sold half for \$50, then sold another 1/4... | `170.0` | `140.0` | Category 4 | Fractional remainder base: 1/4 applied to remaining half vs original total land area. |
 
 | **#1177** | Teacher uses 5-inch chalk for math equations... | `2.0` | `1.0` | Category 4 | Rate of consumption per equation vs per lecture class. |
 
-| **#1310** | Girls raising money: Kim raises $320 more than Alexandra ($430)... | `2280.0` | `2180.0` | Category 4 | Transposition of constant offset during multi-girl sum aggregation. |
+| **#1310** | Girls raising money: Kim raises \$320 more than Alexandra (\$430)... | `2280.0` | `2180.0` | Category 4 | Transposition of constant offset during multi-girl sum aggregation. |
 
 
 
