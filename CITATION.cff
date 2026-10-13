@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use or reference Lumina in your academic research, please cite it as below."
+authors:
+  - family-names: "Barrera Lau"
+    given-names: "Samuel Alejandro"
+    alias: "tuanicdev"
+title: "Lumina: A Sovereign Neuro-Symbolic Cognitive Architecture with Formal Verification and Forensic Traceability"
+version: 1.0.0
+date-released: 2026-10-12
+license: "Custom"
+repository-code: "https://github.com/tuanicdev/lumina-core"
+keywords:
+  - neuro-symbolic
+  - formal-verification
+  - cognitive-architecture
+  - automated-reasoning
+  - clopper-pearson
+  - forensic-audit
+  - z3-solver
+  - sympy

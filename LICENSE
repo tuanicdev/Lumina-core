@@ -1,0 +1,45 @@
+LUMINA CORE RESEARCH & ACADEMIC EVALUATION LICENSE (v1.0)
+
+Copyright (c) 2026 Samuel Alejandro Barrera Lau.
+All Rights Reserved.
+
+1. PERMITTED ACADEMIC & RESEARCH USE
+Permission is hereby granted, free of charge, to any individual or academic institution 
+obtaining a copy of this software, research manuscripts, and associated evaluation datasets 
+(the "Software"), to inspect, review, and execute the Software SOLELY for:
+  (a) Scientific peer review, formal audit, and academic research;
+  (b) Verifying and reproducing the benchmark experiments (e.g., MATH, GSM8K) documented 
+      in the Lumina technical papers;
+  (c) Non-commercial educational purposes.
+
+Any publication, study, thesis, or technical report utilizing, examining, or referencing 
+this Software MUST provide explicit academic citation to Samuel Alejandro Barrera Lau 
+as the primary author, designer, and architect.
+
+2. STRICT PROHIBITION OF COMMERCIAL EXPLOITATION
+No commercial use of any kind is permitted under this license. You may NOT, without prior 
+express written authorization and a separate commercial agreement executed directly with 
+Samuel Alejandro Barrera Lau:
+  (a) Use, host, deploy, or integrate the Software in any commercial product, SaaS offering, 
+      internal enterprise workflow, or revenue-generating service;
+  (b) Distribute, sublicense, rent, lease, or sell copies or derivatives of the Software;
+  (c) Train, fine-tune, or distill proprietary machine learning models or commercial agentic 
+      frameworks using the algorithms, formal pipelines, or data architectures herein.
+
+3. INTELLECTUAL PROPERTY & RESERVATION OF RIGHTS
+All title, ownership rights, intellectual property, patents, and copyright in and to the 
+Software and cognitive architecture remain solely and exclusively with Samuel Alejandro Barrera Lau. 
+All rights not expressly granted under Section 1 are reserved.
+
+4. COMMERCIAL INQUIRIES & DUAL LICENSING
+For enterprise licensing, commercial partnerships, custom cognitive architecture deployment, 
+or proprietary integration, inquiries must be directed directly to the author:
+  Author & Architect: Samuel Alejandro Barrera Lau
+  GitHub: @tuanicdev
+
+5. DISCLAIMER OF WARRANTY
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, 
+INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR 
+PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES 
+OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, 
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
