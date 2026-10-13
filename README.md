@@ -1,5 +1,6 @@
 # Lumina: A Sovereign Neuro-Symbolic Cognitive Architecture with Formal Verification and Forensic Traceability
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23334281.svg)](https://doi.org/10.5281/zenodo.23334281)
 [![License: Custom Academic](https://img.shields.io/badge/License-Academic%20Research%20Only-blue.svg)](LICENSE)
 [![Status: Research Edition](https://img.shields.io/badge/Edition-Research%20%26%20Evaluation-purple.svg)]()
 [![Benchmark: MATH N=1345](https://img.shields.io/badge/MATH%20Benchmark-57.48%25%20Acc-success.svg)](benchmarks/)
@@ -7,6 +8,7 @@
 
 **Author & Lead Architect:** [Samuel Alejandro Barrera Lau](https://github.com/tuanicdev)  
 **Affiliation:** Independent Research / Tuanic  
+**Permanent DOI:** [https://doi.org/10.5281/zenodo.23334281](https://doi.org/10.5281/zenodo.23334281)  
 **Date:** October 2026  
 
 ---

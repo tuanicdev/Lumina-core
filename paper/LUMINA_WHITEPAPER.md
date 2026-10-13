@@ -6,6 +6,8 @@
 **Estado del Proyecto:** ✅ Prototipo Funcional, Corpus GSM8K Evaluado al 100% y Pilotos de Frontera  
 **Investigador Principal & Autor:** Samuel Alejandro Barrera Lau  
 *Investigador en Inteligencia Artificial Neuro-Simbólica & Arquitecto de Software*  
+**Repositorio Oficial:** [https://github.com/tuanicdev/Lumina-core](https://github.com/tuanicdev/Lumina-core)  
+**DOI Permanente (Zenodo):** [https://doi.org/10.5281/zenodo.23334281](https://doi.org/10.5281/zenodo.23334281)  
 **Asistencia Agéntica de Desarrollo:** Antigravity (Advanced Agentic Coding Research, Google DeepMind)  
 **Auditoría Forense y Validación Crítica Interna:** Protocolo Asistido por IA (Nova & DeepSeek AI Reviewers)  
 

@@ -10,6 +10,8 @@
 
 Repository: [https://github.com/tuanicdev/Lumina-core](https://github.com/tuanicdev/Lumina-core)  
 
+DOI: [https://doi.org/10.5281/zenodo.23334281](https://doi.org/10.5281/zenodo.23334281)  
+
 Date: October 2026  
 
 
