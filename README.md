@@ -13,6 +13,15 @@
 
 ---
 
+> [!IMPORTANT]
+> **Scope of this Repository: Scientific Audit & Evaluation Edition**  
+> This open-access repository is published strictly as an **academic evaluation and verification artifact** to accompany the technical papers:
+> * **What is included:** Formal architectural specifications, complete mathematical manuscripts ([`paper/`](paper/)), reference interface abstractions ([`src/`](src/)), and the self-contained statistical audit harness ([`benchmarks/`](benchmarks/)) reproducing the exact Clopper-Pearson and Wilson Score intervals.
+> * **What is proprietary:** The full production cognitive runtime—including live LLM transductions, deep bindings to automated theorem provers (Z3 SMT) and Computer Algebra Systems (SymPy), proprietary heuristic DAGs, and the immutable forensic ledger database—is maintained under sovereign intellectual property protection and closed-source custody.
+> * **Interactive Demos & Licensing:** Third parties wishing to evaluate the live interactive engine or deploy enterprise pilots may contact the author directly for private access.
+
+---
+
 ## 1. Executive Summary & Philosophical Vision
 
 Contemporary large language models (LLMs) operate as purely stochastic token-prediction engines. While proficient in natural language fluency, their lack of explicit world models and formal deductive grounding yields structural vulnerabilities: **hallucinatory divergence, unconstrained reasoning drift, and lack of auditability**.
@@ -84,7 +93,7 @@ On elementary multistep arithmetic, evaluating algebraic ASTs over the ring of e
 * [`benchmarks/`](benchmarks/):
   * [`reproduce_clopper_pearson.py`](benchmarks/reproduce_clopper_pearson.py): Standalone Python script reproducing the exact statistical validation without third-party dependencies.
 * [`src/`](src/):
-  * Core reference abstractions for the Semantic Transducer and Formal Verification Kernel.
+  * Formal reference abstractions and interface contracts for the Semantic Transducer and Formal Verification Kernel (provided for structural auditing; live model scaffolding and production SMT/CAS drivers remain closed-source).
 * [`LICENSE`](LICENSE): Formal academic and non-commercial evaluation terms.
 
 ---
