@@ -153,6 +153,28 @@ def main():
     print(f"    Pure CoT 95% Clopper-Pearson:  [{cot_lo*100.0:.2f}%, {cot_hi*100.0:.2f}%]")
     print(f"    Lumina (Regimen Estacionario): {lumina_stationary_acc:.2f}% (+4.72 pp delta)")
     print(f"    Lumina (Recuperacion Cascada): {lumina_cascaded_acc:.2f}% (+5.54 pp delta)")
+
+    # [4] Zero-Token Sovereign Dual-Hemisphere Ablation (Section 3.7)
+    sovereign_runs = [
+        ("GSM8K Español Canónico (0% LLM)", 10, 10),
+        ("GSM8K Inglés Cohorte #1-#11 (0% LLM)", 11, 11),
+        ("GSM8K Inglés Top-100 Tri-Motor (0% LLM)", 100, 30),
+        ("GSM8K Inglés Corpus Completo (0% LLM)", 1319, 82),
+    ]
+    print("\n[4] ABLACION SOBERANA CERO-LLM (Section 3.7 - Tri-Engine Dual Hemisphere):")
+    print("    Regimen                                 | Muestra | Aciertos | Exact Match | Clopper-Pearson 95% CI")
+    print("    " + "-" * 96)
+    for r_name, r_n, r_k in sovereign_runs:
+        r_acc = (r_k / r_n) * 100.0
+        r_lo, r_hi = clopper_pearson_interval(r_k, r_n, 0.95)
+        print(f"    {r_name:<39} | {r_n:>7} | {r_k:>8} | {r_acc:>10.2f}% | [{r_lo*100.0:>6.2f}%, {r_hi*100.0:>6.2f}%]")
+
+    top100_lo, top100_hi = clopper_pearson_interval(30, 100, 0.95)
+    full_lo, full_hi = clopper_pearson_interval(82, 1319, 0.95)
+    assert abs(top100_lo * 100.0 - 21.24) < 0.05, f"Top100 lower mismatch: {top100_lo}"
+    assert abs(top100_hi * 100.0 - 40.00) < 0.05, f"Top100 upper mismatch: {top100_hi}"
+    assert abs(full_lo * 100.0 - 4.98) < 0.05, f"Full lower mismatch: {full_lo}"
+    assert abs(full_hi * 100.0 - 7.66) < 0.05, f"Full upper mismatch: {full_hi}"
     
     # Consistency Verification against Paper Eq. 511
     assert abs(acc_emitted - 57.48) < 0.01, f"Precision mismatch: {acc_emitted}"

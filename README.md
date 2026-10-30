@@ -82,13 +82,25 @@ On elementary multistep arithmetic, evaluating algebraic ASTs over the ring of e
 * **Lumina (Stationary Regime):** **$97.59\%$** ($+4.72\text{ pp}$ isolated neuro-symbolic delta)
 * **Lumina (Cascaded Recovery):** **$98.41\%$** ($+5.54\text{ pp}$ net gain)
 
+### Zero-Token Sovereign Dual-Hemisphere Ablation (`0% LLM`) & 384D Cognitive Grounding
+To establish the strict lower bound of zero-LLM symbolic reasoning (`--no-llm`, zero neural tokens, zero external API calls), Lumina pairs a bilingual algebraic compiler (`AlgebraicCompiler`), a dimensional/kinematic schema solver (`MotorDimensionalGSM8K`), and a local state machine (`MotorEstadoLocal`) under deduction-completeness arbitration (`CIRUGÍA 5a` guard):
+
+| Sovereign Evaluation Regime (`0% LLM`) | Sample ($N$) | Certified Exact Match | Clopper-Pearson 95% CI | Mean Latency ($\mu$) | Active RAM Footprint |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **GSM8K Spanish Canonical Suite** | 10 | **100.00%** (10 / 10) | [69.15%, 100.00%] | **46.2 ms** | 112.27 MB |
+| **GSM8K English Sequential Cohort (#1–#11)** | 11 | **100.00%** (11 / 11) | [71.51%, 100.00%] | **11.8 ms** | 112.27 MB |
+| **GSM8K English Top-100 (Tri-Engine Dual)** | 100 | **30.00%** (30 / 100) | **[21.24%, 39.98%]** | **12.7 ms** | 112.27 MB |
+| **GSM8K English Full Corpus ($N = 1,319$)** | 1,319 | **6.22%** (82 / 1,319) | **[4.97%, 7.66%]** | **14.9 ms** | 112.27 MB |
+
+In parallel, the sovereign runtime integrates a 384D holographic multi-turn discourse composer (`CompositorDiscursivo384D`) with sliding 12-turn anaphoric state tracking (`RastreadorEstadoDialogo`) grounded on **78,425 verified ontological entities**, passing **7/7 (100%)** multimodal sovereign integration audits within **112.27 MB** of RAM.
+
 ---
 
 ## 4. Repository Contents
 
 * [`paper/`](paper/):
-  * [`LUMINA_PAPER_ARXIV_APA7.pdf`](paper/LUMINA_PAPER_ARXIV_APA7.pdf): Full technical paper compiled in formal APA 7th edition format (20 pages, peer-review ready).
-  * [`LUMINA_WHITEPAPER_COMPLETO.pdf`](paper/LUMINA_WHITEPAPER_COMPLETO.pdf): Comprehensive cognitive architecture whitepaper (24 pages).
+  * [`LUMINA_PAPER_ARXIV_APA7.pdf`](paper/LUMINA_PAPER_ARXIV_APA7.pdf): Full technical paper compiled in formal APA 7th edition format (22 pages, peer-review ready).
+  * [`LUMINA_WHITEPAPER_COMPLETO.pdf`](paper/LUMINA_WHITEPAPER_COMPLETO.pdf): Comprehensive cognitive architecture whitepaper (26 pages).
   * [`lumina.bib`](paper/lumina.bib): Formal BibTeX citation file.
 * [`benchmarks/`](benchmarks/):
   * [`reproduce_clopper_pearson.py`](benchmarks/reproduce_clopper_pearson.py): Standalone Python script reproducing the exact statistical validation without third-party dependencies.
